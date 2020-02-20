@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/jilin.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<!-- //Custom Theme files -->
+<!-- web-fonts -->
+<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+</head>
+<body>
+	<!-- banner -->
+	<div class="agileits-banner">
+
+		<div class="bnr-agileinfo">
+			<!-- navigation -->
+			<div class="top-nav w3-agiletop">
+				<div class="container">
+					<div class="navbar-header w3llogo">
+						
+						<h1><a href="index">疫情地图<span>Epidemic map</span> </a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="w3menu navbar-right">
+							<ul class="nav navbar">
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-letters="Pages">各省地图</span><span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="p?province=hubei">湖北</a></li>										
+										<li><a href="p?province=henan">河南</a></li>
+										<li><a href="p?province=zhejiang">浙江</a></li>
+										<li><a href="p?province=anhui">安徽</a></li>
+										<li><a href="p?province=jiangxi">江西</a></li>
+										<li><a href="p?province=hunan">湖南</a></li>
+										<li><a href="p?province=jiangsu">江苏</a></li>
+										<li><a href="p?province=shandong">山东</a></li>
+										<li><a href="p?province=guangdong">广东</a></li>
+										<li><a href="p?province=chongqing">重庆</a></li>
+										<li><a href="p?province=heilongjiang">黑龙江</a></li>
+										<li><a href="p?province=sichuan">四川</a></li>
+										<li><a href="p?province=beijing">北京</a></li>
+										<li><a href="p?province=fujian">福建</a></li>
+										<li><a href="p?province=shanghai">上海</a></li>
+										<li><a href="p?province=hebei">河北</a></li>
+										<li><a href="p?province=guangxi">广西</a></li>
+										<li><a href="p?province=shanxi">陕西</a></li>
+										<li><a href="p?province=yunnan">云南</a></li>
+										<li><a href="p?province=hainan">海南</a></li>
+										<li><a href="p?province=guizhou">贵州</a></li>
+										<li><a href="p?province=liaoning">辽宁</a></li>
+										<li><a href="p?province=shanxi1">山西</a></li>
+										<li><a href="p?province=tianjin">天津</a></li>
+										<li><a href="xinjiang">新疆</a></li>
+										<li><a href="p?province=jilin">吉林</a></li>
+										<li><a href="p?province=neineng">内蒙</a></li>
+										<li><a href="p?province=xianggang">香港</a></li>
+										<li><a href="p?province=gansu">甘肃</a></li>
+										<li><a href="p?province=ningxia">宁夏</a></li>
+										<li><a href="p?province=taiwan">台湾</a></li>
+										<li><a href="p?province=aomen">澳门</a></li>
+										<li><a href="p?province=qinghai">青海</a></li>
+										<li><a href="p?province=xizang">西藏</a></li>										
+									</ul>
+								</li>								
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- //navigation -->
+			</div>
+			<!-- //banner-text -->
+		</div>
+	</div>
+	
+<div id="a84ff7a9449745c79b8a485e964c9df4" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;"></div>
+    <script>
+        var chart_a84ff7a9449745c79b8a485e964c9df4 = echarts.init(
+            document.getElementById('a84ff7a9449745c79b8a485e964c9df4'), 'white', {renderer: 'canvas'});
+        var option_a84ff7a9449745c79b8a485e964c9df4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u5409\u6797\u7701\u75ab\u60c5\u5730\u56fe",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u5409\u6797",
+            "data": [
+                {
+                    "name": "\u957f\u6625\u5e02",
+                    "value": "29"
+                },
+                {
+                    "name": "\u56db\u5e73\u5e02",
+                    "value": "9"
+                },
+                {
+                    "name": "\u8fbd\u6e90\u5e02",
+                    "value": "6"
+                },
+                {
+                    "name": "\u516c\u4e3b\u5cad\u5e02",
+                    "value": "4"
+                },
+                {
+                    "name": "\u5ef6\u8fb9\u671d\u9c9c\u65cf\u81ea\u6cbb\u5dde",
+                    "value": "3"
+                },
+                {
+                    "name": "\u901a\u5316\u5e02",
+                    "value": "3"
+                },
+                {
+                    "name": "\u5409\u6797\u5e02",
+                    "value": "2"
+                },
+                {
+                    "name": "\u677e\u539f\u5e02",
+                    "value": "1"
+                },
+                {
+                    "name": "\u767d\u57ce\u5e02",
+                    "value": "1"
+                },
+                {
+                    "name": "\u6885\u6cb3\u53e3\u5e02",
+                    "value": "0"
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": false,
+            "itemStyle": {
+                "color": "#ede586"
+            },
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5409\u6797\u7701\u75ab\u60c5\u5730\u56fe"
+            ],
+            "selected": {
+                "\u5409\u6797\u7701\u75ab\u60c5\u5730\u56fe": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 0,
+                "max": 0,
+                "label": "0",
+                "color": "#FFFFFF"
+            },
+            {
+                "min": 1,
+                "max": 9,
+                "label": "1-9",
+                "color": "#FDEBCF"
+            },
+            {
+                "min": 10,
+                "max": 49,
+                "label": "10-49",
+                "color": "#F59E83"
+            },
+            {
+                "min": 50,
+                "max": 99,
+                "label": "50-99",
+                "color": "#E55A4E"
+            },
+            {
+                "min": 100,
+                "max": 199,
+                "label": "100-199",
+                "color": "#CB2A2F"
+            },
+            {
+                "min": 200,
+                "max": 499,
+                "label": "200-499",
+                "color": "#811C24"
+            },
+            {
+                "min": 500,
+                "max": 10000000000,
+                "label": "> 500",
+                "color": "#4F070D"
+            }
+        ]
+    }
+};
+        chart_a84ff7a9449745c79b8a485e964c9df4.setOption(option_a84ff7a9449745c79b8a485e964c9df4);
+    </script>
+	<!-- js -->
+	<script src="/static/js/jquery-2.2.3.min.js"></script>
+	<script src="/static/js/jarallax.js"></script>
+	<script src="/static/js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<!-- //js -->
+	<!-- text Ticker -->
+	<script type="text/javascript" src="/static/js/jquery.totemticker.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#vertical-ticker').totemticker({
+				row_height	:	'100px',
+				next		:	'#ticker-next',
+				previous	:	'#ticker-previous',
+				stop		:	'#stop',
+				start		:	'#start',
+				mousestop	:	true
+			});
+		});
+	</script>
+	<!-- //text Ticker -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="/static/js/move-top.js"></script>
+	<script type="text/javascript" src="/static/js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<!-- Progressive-Effects-Animation-JavaScript -->
+	<script type="text/javascript" src="/static/js/numscroller-1.0.js"></script>
+	<!-- //Progressive-Effects-Animation-JavaScript -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/bootstrap.js"></script>
+</body>
+</html>
