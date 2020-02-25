@@ -10,9 +10,9 @@
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="/epidemic/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/style.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
 <!-- //Custom Theme files -->
 <!-- web-fonts -->
 <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
@@ -61,14 +61,14 @@
 										<li><a href="p?province=liaoning">辽宁</a></li>
 										<li><a href="p?province=shanxi1">山西</a></li>
 										<li><a href="p?province=tianjin">天津</a></li>
-										<li><a href="p?province=xinjiang">新疆</a></li>
+										<li><a href="q?province=xinjiang">新疆</a></li>
 										<li><a href="p?province=jilin">吉林</a></li>
-										<li><a href="p?province=neineng">内蒙</a></li>
-										<li><a href="p?province=xianggang">香港</a></li>
+										<li><a href="p?province=neimeng">内蒙</a></li>
+										<li><a href="q?province=xianggang">香港</a></li>
 										<li><a href="p?province=gansu">甘肃</a></li>
 										<li><a href="p?province=ningxia">宁夏</a></li>
-										<li><a href="p?province=taiwan">台湾</a></li>
-										<li><a href="p?province=aomen">澳门</a></li>
+										<li><a href="q?province=taiwan">台湾</a></li>
+										<li><a href="q?province=aomen">澳门</a></li>
 										<li><a href="p?province=qinghai">青海</a></li>
 										<li><a href="p?province=xizang">西藏</a></li>										
 									</ul>
@@ -85,11 +85,11 @@
 		</div>
 	</div>
 	
-<div id="9e49dc1d66444513aa9d00039887a6b1" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;"></div>
+<div id="f3e07f35bd8241dab11e5df11dc90886" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;z-index:6;"></div>
     <script>
-        var chart_9e49dc1d66444513aa9d00039887a6b1 = echarts.init(
-            document.getElementById('9e49dc1d66444513aa9d00039887a6b1'), 'white', {renderer: 'canvas'});
-        var option_9e49dc1d66444513aa9d00039887a6b1 = {
+        var chart_f3e07f35bd8241dab11e5df11dc90886 = echarts.init(
+            document.getElementById('f3e07f35bd8241dab11e5df11dc90886'), 'white', {renderer: 'canvas'});
+        var option_f3e07f35bd8241dab11e5df11dc90886 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -137,54 +137,38 @@
             "data": [
                 {
                     "name": "\u4e09\u4e9a\u5e02",
-                    "value": "37"
+                    "value": "1"
                 },
                 {
                     "name": "\u6d77\u53e3\u5e02",
-                    "value": "24"
-                },
-                {
-                    "name": "\u510b\u5dde\u5e02",
-                    "value": "13"
-                },
-                {
-                    "name": "\u4e07\u5b81\u5e02",
-                    "value": "10"
-                },
-                {
-                    "name": "\u6f84\u8fc8\u53bf",
-                    "value": "7"
+                    "value": "15"
                 },
                 {
                     "name": "\u660c\u6c5f\u9ece\u65cf\u81ea\u6cbb\u53bf",
-                    "value": "7"
+                    "value": "11"
                 },
                 {
-                    "name": "\u743c\u6d77\u5e02",
+                    "name": "\u510b\u5dde\u5e02",
                     "value": "4"
                 },
                 {
-                    "name": "\u9675\u6c34\u9ece\u65cf\u81ea\u6cbb\u53bf",
-                    "value": "4"
+                    "name": "\u4e07\u5b81\u5e02",
+                    "value": "2"
                 },
                 {
-                    "name": "\u4e34\u9ad8\u53bf",
-                    "value": "3"
+                    "name": "\u6f84\u8fc8\u53bf",
+                    "value": "2"
                 },
                 {
                     "name": "\u4fdd\u4ead\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
-                    "value": "3"
-                },
-                {
-                    "name": "\u6587\u660c\u5e02",
                     "value": "2"
                 },
                 {
-                    "name": "\u4e50\u4e1c\u9ece\u65cf\u81ea\u6cbb\u53bf",
+                    "name": "\u743c\u6d77\u5e02",
                     "value": "2"
                 },
                 {
-                    "name": "\u5b9a\u5b89\u53bf",
+                    "name": "\u4e34\u9ad8\u53bf",
                     "value": "1"
                 },
                 {
@@ -192,12 +176,24 @@
                     "value": "1"
                 },
                 {
-                    "name": "\u743c\u4e2d\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
+                    "name": "\u9675\u6c34\u9ece\u65cf\u81ea\u6cbb\u53bf",
+                    "value": "1"
+                },
+                {
+                    "name": "\u5b9a\u5b89\u53bf",
                     "value": "0"
                 },
                 {
-                    "name": "\u5f85\u660e\u786e\u5730\u533a\u5e02",
-                    "value": "12"
+                    "name": "\u6587\u660c\u5e02",
+                    "value": "0"
+                },
+                {
+                    "name": "\u4e50\u4e1c\u9ece\u65cf\u81ea\u6cbb\u53bf",
+                    "value": "0"
+                },
+                {
+                    "name": "\u743c\u4e2d\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf",
+                    "value": "0"
                 }
             ],
             "roam": true,
@@ -308,12 +304,12 @@
         ]
     }
 };
-        chart_9e49dc1d66444513aa9d00039887a6b1.setOption(option_9e49dc1d66444513aa9d00039887a6b1);
+        chart_f3e07f35bd8241dab11e5df11dc90886.setOption(option_f3e07f35bd8241dab11e5df11dc90886);
     </script>
 	<!-- js -->
-	<script src="/epidemic/static/js/jquery-2.2.3.min.js"></script>
-	<script src="/epidemic/static/js/jarallax.js"></script>
-	<script src="/epidemic/static/js/SmoothScroll.min.js"></script>
+	<script src="/static/js/jquery-2.2.3.min.js"></script>
+	<script src="/static/js/jarallax.js"></script>
+	<script src="/static/js/SmoothScroll.min.js"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
@@ -324,7 +320,7 @@
 	</script>
 	<!-- //js -->
 	<!-- text Ticker -->
-	<script type="text/javascript" src="/epidemic/static/js/jquery.totemticker.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.totemticker.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('#vertical-ticker').totemticker({
@@ -339,8 +335,8 @@
 	</script>
 	<!-- //text Ticker -->
 	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="/epidemic/static/js/move-top.js"></script>
-	<script type="text/javascript" src="/epidemic/static/js/easing.js"></script>
+	<script type="text/javascript" src="/static/js/move-top.js"></script>
+	<script type="text/javascript" src="/static/js/easing.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){
@@ -369,11 +365,11 @@
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 	<!-- Progressive-Effects-Animation-JavaScript -->
-	<script type="text/javascript" src="/epidemic/static/js/numscroller-1.0.js"></script>
+	<script type="text/javascript" src="/static/js/numscroller-1.0.js"></script>
 	<!-- //Progressive-Effects-Animation-JavaScript -->
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/epidemic/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
 </body>
 </html>

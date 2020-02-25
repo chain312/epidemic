@@ -10,9 +10,9 @@
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="/epidemic/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/style.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
 <!-- //Custom Theme files -->
 <!-- web-fonts -->
 <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
@@ -61,14 +61,14 @@
 										<li><a href="p?province=liaoning">辽宁</a></li>
 										<li><a href="p?province=shanxi1">山西</a></li>
 										<li><a href="p?province=tianjin">天津</a></li>
-										<li><a href="p?province=xinjiang">新疆</a></li>
+										<li><a href="q?province=xinjiang">新疆</a></li>
 										<li><a href="p?province=jilin">吉林</a></li>
-										<li><a href="p?province=neineng">内蒙</a></li>
-										<li><a href="p?province=xianggang">香港</a></li>
+										<li><a href="p?province=neimeng">内蒙</a></li>
+										<li><a href="q?province=xianggang">香港</a></li>
 										<li><a href="p?province=gansu">甘肃</a></li>
 										<li><a href="p?province=ningxia">宁夏</a></li>
-										<li><a href="p?province=taiwan">台湾</a></li>
-										<li><a href="p?province=aomen">澳门</a></li>
+										<li><a href="q?province=taiwan">台湾</a></li>
+										<li><a href="q?province=aomen">澳门</a></li>
 										<li><a href="p?province=qinghai">青海</a></li>
 										<li><a href="p?province=xizang">西藏</a></li>										
 									</ul>
@@ -85,11 +85,11 @@
 		</div>
 	</div>
 	
-<div id="655303decec3450ea4daad9aafe434e9" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;"></div>
+<div id="0903d6d7b640457bbbfdc6f30e5dc9e0" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;z-index:6;"></div>
     <script>
-        var chart_655303decec3450ea4daad9aafe434e9 = echarts.init(
-            document.getElementById('655303decec3450ea4daad9aafe434e9'), 'white', {renderer: 'canvas'});
-        var option_655303decec3450ea4daad9aafe434e9 = {
+        var chart_0903d6d7b640457bbbfdc6f30e5dc9e0 = echarts.init(
+            document.getElementById('0903d6d7b640457bbbfdc6f30e5dc9e0'), 'white', {renderer: 'canvas'});
+        var option_0903d6d7b640457bbbfdc6f30e5dc9e0 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -137,34 +137,26 @@
             "data": [
                 {
                     "name": "\u5b9d\u577b\u533a",
-                    "value": "37"
-                },
-                {
-                    "name": "\u6cb3\u4e1c\u533a",
-                    "value": "7"
-                },
-                {
-                    "name": "\u6cb3\u5317\u533a",
-                    "value": "5"
-                },
-                {
-                    "name": "\u5317\u8fb0\u533a",
-                    "value": "5"
+                    "value": "1"
                 },
                 {
                     "name": "\u5357\u5f00\u533a",
-                    "value": "5"
+                    "value": "28"
                 },
                 {
-                    "name": "\u5b81\u6cb3\u533a",
+                    "name": "\u6cb3\u4e1c\u533a",
                     "value": "4"
                 },
                 {
-                    "name": "\u5916\u5730\u6765\u6d25\u4eba\u5458\u5e02",
+                    "name": "\u5317\u8fb0\u533a",
                     "value": "3"
                 },
                 {
-                    "name": "\u4e1c\u4e3d\u533a",
+                    "name": "\u5b81\u6cb3\u533a",
+                    "value": "3"
+                },
+                {
+                    "name": "\u6cb3\u5317\u533a",
                     "value": "3"
                 },
                 {
@@ -172,20 +164,28 @@
                     "value": "2"
                 },
                 {
-                    "name": "\u6cb3\u897f\u533a",
-                    "value": "2"
+                    "name": "\u5916\u5730\u6765\u6d25\u4eba\u5458\u5e02",
+                    "value": "1"
                 },
                 {
-                    "name": "\u6ee8\u6d77\u65b0\u533a",
-                    "value": "2"
+                    "name": "\u4e1c\u4e3d\u533a",
+                    "value": "1"
+                },
+                {
+                    "name": "\u6cb3\u897f\u533a",
+                    "value": "0"
                 },
                 {
                     "name": "\u897f\u9752\u533a",
-                    "value": "1"
+                    "value": "0"
+                },
+                {
+                    "name": "\u6ee8\u6d77\u65b0\u533a",
+                    "value": "0"
                 },
                 {
                     "name": "\u6b66\u6e05\u533a",
-                    "value": "1"
+                    "value": "0"
                 },
                 {
                     "name": "\u7ea2\u6865\u533a",
@@ -304,12 +304,12 @@
         ]
     }
 };
-        chart_655303decec3450ea4daad9aafe434e9.setOption(option_655303decec3450ea4daad9aafe434e9);
+        chart_0903d6d7b640457bbbfdc6f30e5dc9e0.setOption(option_0903d6d7b640457bbbfdc6f30e5dc9e0);
     </script>
 	<!-- js -->
-	<script src="/epidemic/static/js/jquery-2.2.3.min.js"></script>
-	<script src="/epidemic/static/js/jarallax.js"></script>
-	<script src="/epidemic/static/js/SmoothScroll.min.js"></script>
+	<script src="/static/js/jquery-2.2.3.min.js"></script>
+	<script src="/static/js/jarallax.js"></script>
+	<script src="/static/js/SmoothScroll.min.js"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
@@ -320,7 +320,7 @@
 	</script>
 	<!-- //js -->
 	<!-- text Ticker -->
-	<script type="text/javascript" src="/epidemic/static/js/jquery.totemticker.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.totemticker.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('#vertical-ticker').totemticker({
@@ -335,8 +335,8 @@
 	</script>
 	<!-- //text Ticker -->
 	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="/epidemic/static/js/move-top.js"></script>
-	<script type="text/javascript" src="/epidemic/static/js/easing.js"></script>
+	<script type="text/javascript" src="/static/js/move-top.js"></script>
+	<script type="text/javascript" src="/static/js/easing.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){
@@ -365,11 +365,11 @@
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 	<!-- Progressive-Effects-Animation-JavaScript -->
-	<script type="text/javascript" src="/epidemic/static/js/numscroller-1.0.js"></script>
+	<script type="text/javascript" src="/static/js/numscroller-1.0.js"></script>
 	<!-- //Progressive-Effects-Animation-JavaScript -->
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/epidemic/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
 </body>
 </html>
