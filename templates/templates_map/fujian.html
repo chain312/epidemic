@@ -10,9 +10,9 @@
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="/epidemic/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/style.css" type="text/css" rel="stylesheet" media="all">
-<link href="/epidemic/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
+<link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/static/css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
 <!-- //Custom Theme files -->
 <!-- web-fonts -->
 <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
@@ -52,7 +52,7 @@
 										<li><a href="p?province=beijing">北京</a></li>
 										<li><a href="p?province=fujian">福建</a></li>
 										<li><a href="p?province=shanghai">上海</a></li>
-										<li><a href="p?province=hebie">河北</a></li>
+										<li><a href="p?province=hebei">河北</a></li>
 										<li><a href="p?province=guangxi">广西</a></li>
 										<li><a href="p?province=shanxi">陕西</a></li>
 										<li><a href="p?province=yunnan">云南</a></li>
@@ -61,14 +61,14 @@
 										<li><a href="p?province=liaoning">辽宁</a></li>
 										<li><a href="p?province=shanxi1">山西</a></li>
 										<li><a href="p?province=tianjin">天津</a></li>
-										<li><a href="p?province=xinjiang">新疆</a></li>
+										<li><a href="q?province=xinjiang">新疆</a></li>
 										<li><a href="p?province=jilin">吉林</a></li>
 										<li><a href="p?province=neimeng">内蒙</a></li>
-										<li><a href="p?province=xianggang">香港</a></li>
+										<li><a href="q?province=xianggang">香港</a></li>
 										<li><a href="p?province=gansu">甘肃</a></li>
 										<li><a href="p?province=ningxia">宁夏</a></li>
-										<li><a href="p?province=taiwan">台湾</a></li>
-										<li><a href="p?province=aomen">澳门</a></li>
+										<li><a href="q?province=taiwan">台湾</a></li>
+										<li><a href="q?province=aomen">澳门</a></li>
 										<li><a href="p?province=qinghai">青海</a></li>
 										<li><a href="p?province=xizang">西藏</a></li>										
 									</ul>
@@ -85,11 +85,11 @@
 		</div>
 	</div>
 	
-<div id="26f25427f2ed4c42824ee244bdd1b2b3" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;"></div>
+<div id="1cf15c3ad8c243e190acb24fec7427da" class="agile-caption" style="margin: 10px auto;width:1440px; height:800px;z-index:6;"></div>
     <script>
-        var chart_26f25427f2ed4c42824ee244bdd1b2b3 = echarts.init(
-            document.getElementById('26f25427f2ed4c42824ee244bdd1b2b3'), 'white', {renderer: 'canvas'});
-        var option_26f25427f2ed4c42824ee244bdd1b2b3 = {
+        var chart_1cf15c3ad8c243e190acb24fec7427da = echarts.init(
+            document.getElementById('1cf15c3ad8c243e190acb24fec7427da'), 'white', {renderer: 'canvas'});
+        var option_1cf15c3ad8c243e190acb24fec7427da = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -136,40 +136,44 @@
             "mapType": "\u798f\u5efa",
             "data": [
                 {
-                    "name": "\u798f\u5dde\u5e02",
-                    "value": "45"
-                },
-                {
                     "name": "\u8386\u7530\u5e02",
-                    "value": "38"
+                    "value": "1"
                 },
                 {
                     "name": "\u6cc9\u5dde\u5e02",
-                    "value": "33"
+                    "value": "25"
+                },
+                {
+                    "name": "\u798f\u5dde\u5e02",
+                    "value": "25"
                 },
                 {
                     "name": "\u53a6\u95e8\u5e02",
-                    "value": "28"
-                },
-                {
-                    "name": "\u5b81\u5fb7\u5e02",
-                    "value": "19"
-                },
-                {
-                    "name": "\u6f33\u5dde\u5e02",
-                    "value": "14"
+                    "value": "9"
                 },
                 {
                     "name": "\u5357\u5e73\u5e02",
-                    "value": "13"
+                    "value": "8"
+                },
+                {
+                    "name": "\u5b81\u5fb7\u5e02",
+                    "value": "8"
+                },
+                {
+                    "name": "\u6f33\u5dde\u5e02",
+                    "value": "6"
                 },
                 {
                     "name": "\u4e09\u660e\u5e02",
-                    "value": "10"
+                    "value": "6"
                 },
                 {
                     "name": "\u9f99\u5ca9\u5e02",
-                    "value": "5"
+                    "value": "6"
+                },
+                {
+                    "name": "\u5f85\u660e\u786e\u5730\u533a",
+                    "value": "1"
                 }
             ],
             "roam": true,
@@ -280,12 +284,12 @@
         ]
     }
 };
-        chart_26f25427f2ed4c42824ee244bdd1b2b3.setOption(option_26f25427f2ed4c42824ee244bdd1b2b3);
+        chart_1cf15c3ad8c243e190acb24fec7427da.setOption(option_1cf15c3ad8c243e190acb24fec7427da);
     </script>
 	<!-- js -->
-	<script src="/epidemic/static/js/jquery-2.2.3.min.js"></script>
-	<script src="/epidemic/static/js/jarallax.js"></script>
-	<script src="/epidemic/static/js/SmoothScroll.min.js"></script>
+	<script src="/static/js/jquery-2.2.3.min.js"></script>
+	<script src="/static/js/jarallax.js"></script>
+	<script src="/static/js/SmoothScroll.min.js"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
@@ -296,7 +300,7 @@
 	</script>
 	<!-- //js -->
 	<!-- text Ticker -->
-	<script type="text/javascript" src="/epidemic/static/js/jquery.totemticker.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.totemticker.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('#vertical-ticker').totemticker({
@@ -311,8 +315,8 @@
 	</script>
 	<!-- //text Ticker -->
 	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="/epidemic/static/js/move-top.js"></script>
-	<script type="text/javascript" src="/epidemic/static/js/easing.js"></script>
+	<script type="text/javascript" src="/static/js/move-top.js"></script>
+	<script type="text/javascript" src="/static/js/easing.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){
@@ -341,11 +345,11 @@
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
 	<!-- Progressive-Effects-Animation-JavaScript -->
-	<script type="text/javascript" src="/epidemic/static/js/numscroller-1.0.js"></script>
+	<script type="text/javascript" src="/static/js/numscroller-1.0.js"></script>
 	<!-- //Progressive-Effects-Animation-JavaScript -->
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/epidemic/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
 </body>
 </html>
