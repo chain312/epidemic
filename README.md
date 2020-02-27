@@ -4,7 +4,7 @@
 
 > 之前通过pyecharts画了河南的疫情图，但是由于颜色不直观，所以看不出疫情的情况，所以就用了几天时间，做了一个搭载在Django框架上的中国以及中国各地区的疫情图。预览如下
 
-![项目预览][1]
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/map.gif"/></div>
 
 ##01Django框架使用
 Django是python写的web MVC框架，利用此框架可以快速开发部署项目，在Django框架中提供后台管理站点和CSRF漏洞防范，能够方便站点的管理和上线后的CSRF防御。话不多说，一起来看下，在此项目中Django框架的使用。框架中的使用主要包括下面几个步骤
@@ -16,7 +16,7 @@ Django是python写的web MVC框架，利用此框架可以快速开发部署项�
 > * 更改相关配置
 ###Django安装
 首先要在开发环境中安装Django,笔者的开发环境是Windows环境。安装的版本为2.2.4
-![Django版本][2]
+ <div><img width="655" height="361" src="https://github.com/chain312/epidemic/blob/master/static/images/111.png"/></div>
 在安装时可以指定Django框架为2.2.4
 
     pip install Django==2.2.4 
@@ -26,7 +26,7 @@ Django是python写的web MVC框架，利用此框架可以快速开发部署项�
     pip install Django==2.2.4 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 安装完成后，查看是否安装成功
-![安装成功][3]
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/2.png"/></div>
 至此，Django框架就安装成功了。
 ###创建项目
 那么如何新建一个epidemic_map的应用呢？
@@ -41,7 +41,7 @@ Django创建项目的命令为
 
 如果你要指定的文件夹下创建项目的话，可以先切换文件目录
 例如，我把项目创建在D:\file下
-![创建项目][4]
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/3.png"/></div>
 项目目录如下
 epidemic1 项目名
  ├── epidemic1 
@@ -81,19 +81,19 @@ views.py接收请求，进行处理，定义处理函数，视图函数
 要想项目包含和访问应用还要在项目中注册应用
 用pycharm导入项目，打开settings.py,在
 INSTALLED_APPS中加入新创建的应用，如下:
-![创建应用][5]
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/4.png"/></div>
 ###更改相关配置
 还需要设置时区和使用语言，如下
 
     LANGUAGE_CODE = 'zh-hans' #使用中国语言
     TIME_ZONE = 'Asia/Shanghai' #使用中国上海时间
 
-![更改前][6]
+ <div><img width="655" height="361" src="https://github.com/chain312/epidemic/blob/master/static/images/5.png"/></div>
 改为
-![更改后][7]
+ <div><img width="655" height="361" src="https://github.com/chain312/epidemic/blob/master/static/images/6.png"/></div>
 至此Django框架的配置就告一段落。
 总结下要点
-![Diango使用][8]
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/Django%E4%BD%BF%E7%94%A8.png"/></div>
 
 ##02全国各地区的数据准备
 
@@ -129,7 +129,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
 
 ##03地图配置更改
 在上次画的河南疫情地图上进行修改，上次画的疫情图如下。
-![初次画河南地图][9]
+<div><img width="655" height="361" rc="https://github.com/chain312/epidemic/blob/master/static/images/%E4%B8%8B%E8%BD%BD%20(1).png"/></div>
 需要做的修改为：
 > * 将颜色根据数据大小划分
 > * 去除丁香医生数据标识（不美观）
@@ -139,7 +139,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
 > * 更改生成地图页面模板
 
 更改成如下
-![河南疫情图][10]
+<div><img src="https://github.com/chain312/epidemic/blob/master/static/images/%E6%B2%B3%E5%8D%97%E7%96%AB%E6%83%85.png"/></div>
 修改后代码如下
 
      g = (
@@ -179,13 +179,13 @@ INSTALLED_APPS中加入新创建的应用，如下:
 ##04在Django 框架中实现地图生成
  在应用的view.py中添加生成地图代码，要想通过浏览器访问到该网页，要明白网络的‘路由’过程。
 用户通过浏览器访问应用，首先到项目的urls.py,再路由到应用的urls.py，最后到应用的views.py.路由顺序如下
-![路由顺序][11]
+<div><img src="https://github.com/chain312/epidemic/blob/master/static/images/8.png"/></div>
     在新建应用中，没有2 urls.py文件，在应用中要新建一个urls.py文件，在‘路由过程中’，如何让项目中的1指向2呢？要在1中添加以下代码
-![项目Urls配置][12]
+<div><img src="https://github.com/chain312/epidemic/blob/master/static/images/9.png"/></div>
 还要在2内添加
-![添加项目名][13]
+<div><img src="https://github.com/chain312/epidemic/blob/master/static/images/10.png"/></div>
 2如何访问3呢？需要在2内进行以下修改
-![应用Urls配置][14]
+<div><img src="https://github.com/chain312/epidemic/blob/master/static/images/11.png"/></div>
 ‘路由’配置完后，进行代码编写。项目详情见
 
     https://github.com/chain312/epidemic
