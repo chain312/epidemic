@@ -131,6 +131,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
 在上次画的河南疫情地图上进行修改，上次画的疫情图如下。
 <div><img width="655" height="361" rc="https://github.com/chain312/epidemic/blob/master/static/images/%E4%B8%8B%E8%BD%BD%20(1).png"/></div>
 需要做的修改为：
+
 > * 将颜色根据数据大小划分
 > * 去除丁香医生数据标识（不美观）
 > * 在地图顶部显示省份
