@@ -6,7 +6,7 @@
 
  <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/map.gif"/></div>
 
-##01Django框架使用
+## 01Django框架使用
 Django是python写的web MVC框架，利用此框架可以快速开发部署项目，在Django框架中提供后台管理站点和CSRF漏洞防范，能够方便站点的管理和上线后的CSRF防御。话不多说，一起来看下，在此项目中Django框架的使用。框架中的使用主要包括下面几个步骤
 
 > * Django安装
@@ -14,7 +14,7 @@ Django是python写的web MVC框架，利用此框架可以快速开发部署项�
 > * 创建应用
 > * 注册应用
 > * 更改相关配置
-###Django安装
+### Django安装
 首先要在开发环境中安装Django,笔者的开发环境是Windows环境。安装的版本为2.2.4
  <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/111.jpg"/></div>
 在安装时可以指定Django框架为2.2.4
@@ -28,7 +28,7 @@ Django是python写的web MVC框架，利用此框架可以快速开发部署项�
 安装完成后，查看是否安装成功
  <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/2.png"/></div>
 至此，Django框架就安装成功了。
-###创建项目
+### 创建项目
 那么如何新建一个epidemic_map的应用呢？
 Django中创建应用和其他语言如C,C#类似，都要新创建一个项目，在新项目中创建一个应用。
 Django创建项目的命令为
@@ -56,7 +56,7 @@ epidemic1 项目名
 manage.py是每个Django项目中自动生成的一个用于管理项目的脚本文件，需要通过python命令执行。manage.py接受的是Django提供的内置命令，它的内置命令很多，在此开发中我们用到的内置命令为下面2个：
 startapp  创建新的app。
 runserver 启用Django为我们提供的轻量级的开发用的Web服务器。
-###创建应用
+### 创建应用
 
     python manage.py startapp 应用名
 
@@ -82,7 +82,7 @@ views.py接收请求，进行处理，定义处理函数，视图函数
 用pycharm导入项目，打开settings.py,在
 INSTALLED_APPS中加入新创建的应用，如下:
  <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/4.png"/></div>
-###更改相关配置
+### 更改相关配置
 还需要设置时区和使用语言，如下
 
     LANGUAGE_CODE = 'zh-hans' #使用中国语言
@@ -95,7 +95,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
 总结下要点
  <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/Django%E4%BD%BF%E7%94%A8.png"/></div>
 
-##02全国各地区的数据准备
+## 02全国各地区的数据准备
 
 数据来源还是丁香医生，通过爬虫爬取数据，再通过正则表达式匹配到需要的数据。
 网络爬虫代码为
@@ -127,7 +127,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
     city_data = city_data[6:len(city_data):6]
 其中，匹配出来的城市名和地图中的城市名称对不上，相应的还要进行修改城市名，在画图的时候还要进行修改。
 
-##03地图配置更改
+## 03地图配置更改
 在上次画的河南疫情地图上进行修改，上次画的疫情图如下。
 <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/%E4%B8%8B%E8%BD%BD%20(1).png"/></div>
 需要做的修改为：
@@ -177,7 +177,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
         g.render(path='templates/templates_map/'+province+'.html',template_name='mapmodel.html')  
         #默认使用的生成地图模板在Python\Lib\site-packages\pyecharts\render\templates\目录下，
         #可以将我们自己的模板复制到该目录下  
-##04在Django 框架中实现地图生成
+## 04在Django 框架中实现地图生成
  在应用的view.py中添加生成地图代码，要想通过浏览器访问到该网页，要明白网络的‘路由’过程。
 用户通过浏览器访问应用，首先到项目的urls.py,再路由到应用的urls.py，最后到应用的views.py.路由顺序如下
 <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/8.png"/></div>
@@ -194,7 +194,7 @@ INSTALLED_APPS中加入新创建的应用，如下:
 
     https://chain312.github.io/epidemic/templates/templates_map/index.html
 
-##问题反馈
+## 问题反馈
 在你使用过程中,有什么建议或者问题,欢迎反馈
 
  - 微信:wei8896966
