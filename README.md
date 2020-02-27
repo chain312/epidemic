@@ -16,7 +16,7 @@ Django是python写的web MVC框架，利用此框架可以快速开发部署项�
 > * 更改相关配置
 ###Django安装
 首先要在开发环境中安装Django,笔者的开发环境是Windows环境。安装的版本为2.2.4
- <div><img width="655" height="361" src="https://github.com/chain312/epidemic/blob/master/static/images/111.png"/></div>
+ <div><img src="https://github.com/chain312/epidemic/blob/master/static/images/111.jpg"/></div>
 在安装时可以指定Django框架为2.2.4
 
     pip install Django==2.2.4 
