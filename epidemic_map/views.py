@@ -18,7 +18,7 @@ def getepodemicdata():
     response = s.get(url)
     response.encoding = 'utf-8'
     html = response.text
-    print(html)
+    # print(html)
     # #print(dict[province])
     # regular = '(\{\\\"provinceName"\:\\\"'+dict[province]+'\\\"\,\\\"provinceShortName\\\".+?\{\\\"provinceName\\\")'
     #
@@ -87,8 +87,9 @@ def drawmap(province):
                 continue
             else:
                 city_name.append("".join([i, "市"]))
-        city_name = city_name[2:len(city_name)]
-        city_data = city_data[6:len(city_data):6]
+        # print(city_name,city_data)
+        city_name = city_name[5:len(city_name)]
+        city_data = city_data[12:len(city_data):6]
     # city_name = city_name[4:len(city_name)]
     # city_data = city_data[7:len(city_data):6]
     elif province=='henan':
@@ -300,7 +301,8 @@ def drewindex():
     # print(dict1.values())
     g = (
             Map(init_opts=opts.InitOpts(width = '1440px', height='800px'))
-                .add("中国疫情地图", [list(z) for z in zip(dict1.values(), city_data1)], maptype="china",is_map_symbol_show=False,itemstyle_opts=opts.ItemStyleOpts(color="#ede586"))
+
+                .add("中国疫情地图", [list(z) for z in zip(dict1.values(), city_data1)], maptype="china",is_map_symbol_show=False,itemstyle_opts=opts.ItemStyleOpts(color="#ede586"),is_roam=False)
                 # .set_global_opts(title_opts=opts.TitleOpts(title="Map-基本示例"),
                 .set_global_opts(
                 # title_opts=opts.TitleOpts(title="Map-基本示例"),
@@ -326,6 +328,7 @@ def drewindex():
                                  )
         )
     # print('emplates_map/index.html')
+
     g.render(path='templates/templates_map/index.html',template_name='mapmodel.html')
 # Create your views here.
 def index(request):
