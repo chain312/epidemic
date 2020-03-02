@@ -18,7 +18,7 @@ def getepodemicdata():
     response = s.get(url)
     response.encoding = 'utf-8'
     html = response.text
-    print(html)
+    # print(html)
     # #print(dict[province])
     # regular = '(\{\\\"provinceName"\:\\\"'+dict[province]+'\\\"\,\\\"provinceShortName\\\".+?\{\\\"provinceName\\\")'
     #
@@ -87,8 +87,9 @@ def drawmap(province):
                 continue
             else:
                 city_name.append("".join([i, "市"]))
-        city_name = city_name[2:len(city_name)]
-        city_data = city_data[6:len(city_data):6]
+        # print(city_name,city_data)
+        city_name = city_name[5:len(city_name)]
+        city_data = city_data[12:len(city_data):6]
     # city_name = city_name[4:len(city_name)]
     # city_data = city_data[7:len(city_data):6]
     elif province=='henan':
